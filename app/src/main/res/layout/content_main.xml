@@ -13,8 +13,8 @@
     tools:context="kr.co.mash_up.emojing.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+    <Button
+        android:id="@+id/share"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
 </RelativeLayout>
