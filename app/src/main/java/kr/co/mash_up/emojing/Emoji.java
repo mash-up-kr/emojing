@@ -1,38 +1,32 @@
 package kr.co.mash_up.emojing;
 
-import java.util.Date;
-import java.util.UUID;
-
 /**
  * Created by Beckham on 2016-08-27.
  */
 public class Emoji {
-    private Date mDate;
-    private String mDiary;
-    private UUID mId;
 
-    public Emoji(){
-        mId = UUID.randomUUID();
-        mDate = new Date();
+    private String mDiary;  //이모지 내용
+
+    private long createAt;
+
+    public Emoji(String diary, long createAt) {
+        mDiary = diary;
+        this.createAt = createAt;
     }
 
-    public UUID getmId() {
-        return mId;
-    }
-
-    public Date getmDate() {
-        return mDate;
-    }
-
-    public void setmDate(Date mDate) {
-        this.mDate = mDate;
-    }
-
-    public String getmDiary() {
+    public String getDiary() {
         return mDiary;
     }
 
-    public void setmDiary(String mDiary) {
-        this.mDiary = mDiary;
+    public void setDiary(String diary) {
+        mDiary = diary;
+    }
+
+    public long getCreateAt() {
+        return createAt;
+    }
+
+    public void setCreateAt(long createAt) {
+        this.createAt = createAt;
     }
 }
